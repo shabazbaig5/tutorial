@@ -1,10 +1,15 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 
-function Tutorial(){
+const Tutorial = () => {
 
-  return(
-    <div>
-      <p>Hello from the react application</p>
-    </div>
-  )
+    return (
+      <div>
+        <p>Hey there from the react application.</p>
+      </div>
+    )
+
 }
+
+
+ReactDom.render(<Tutorial />, document.getElementById('root'));
